@@ -7,7 +7,8 @@ const step = 50;
 const reducer = (state, action) => {
     switch (action.type) {
         case "INCREMENT_R":
-            return Object.assign({}, state, { r: limitRGB(state.r + step) });
+            // return Object.assign({}, state, { r: limitRGB(state.r + step) });
+            return { ...state, r: limitRGB(state.r + step) }
         case "DECREMENT_R":
             return Object.assign({}, state, { r: limitRGB(state.r - step) });
         case "INCREMENT_G":
