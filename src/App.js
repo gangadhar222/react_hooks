@@ -3,6 +3,7 @@ import './App.css';
 import ContextComponent from './Context';
 import RefComponent from './Ref';
 import ReducerComponent from './Reducer';
+import MemoComponent from './Memo';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ContextComponent />
       <RefComponent />
       <ReducerComponent />
+      <MemoComponent />
     </div>
   );
 }
